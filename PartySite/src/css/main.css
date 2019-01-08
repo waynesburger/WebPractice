@@ -1,0 +1,46 @@
+/*======================================================
+ * Style for Buttons
+ ======================================================*/
+
+.button{
+	margin: 0 auto;
+	width: 20%;
+	border: 2px solid green;
+	background: #acfc53;
+	border-radius: 4px;
+}
+
+.centered{
+	margin: 0 auto;
+	width: 200px;
+}
+
+a {
+	display: block;
+	width: 100%;
+	line-height: 2em;
+	text-align: center;
+	border-radius: 5px;
+}
+
+a:hover {
+	color: #8228ef;
+	background: #dfb4f7;
+}
+
+h1 {
+	text-align: center;
+	color: #1f3ff2;
+}
+
+#wrong{
+	font-size: 30px;
+	text-align: center;
+	color: #f92418;
+}
+
+#right{
+	font-size: 30px;
+	text-align: center;
+	color: #09872d;
+}
