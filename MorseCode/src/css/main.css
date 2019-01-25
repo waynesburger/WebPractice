@@ -1,0 +1,37 @@
+/* Tab Styling */
+.tab {
+	overflow: hidden;
+	border: 1px solid #050daa;
+	background-color: #b3b7f9;
+}
+
+/* Style buttons that open the tab content */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+/* button color on hover */
+.tab button:hover{
+	background-color: #8f94f7;
+	
+}
+
+/* class for buttons that are currently active */
+.tab button.active{
+	background-color: #626af7;
+}
+
+/* Tab Content Styling */
+.tabcontent{
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #050daa;
+	border-top: none;
+}
+
