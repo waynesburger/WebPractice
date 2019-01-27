@@ -1,8 +1,17 @@
 /* Tab Styling */
+.tab-casing{
+	border: 1px solid #050daa;
+	border-bottom: none;
+	border-top: none;
+}
+
 .tab {
 	overflow: hidden;
 	border: 1px solid #050daa;
+	border-radius: 10px 40px;
 	background-color: #b3b7f9;
+	margin: 0 auto;
+	width: 250px;
 }
 
 /* Style buttons that open the tab content */
@@ -33,5 +42,21 @@
 	padding: 6px 12px;
 	border: 1px solid #050daa;
 	border-top: none;
+}
+
+/* for title fonts */
+.title-font1{
+	font-size: 30px;
+	font-family: verdana;
+	font-style: italic;
+	color: #0615a0; 
+}
+
+/* boiler plate for any centered element */
+.centered-content{
+	margin: 0 auto;
+	border: 1px solid #050daa;
+	border-radius: 15px 50px;
+	padding: 20px;
 }
 
