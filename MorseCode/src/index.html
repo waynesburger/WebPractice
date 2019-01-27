@@ -16,37 +16,120 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body style="background-color: #ACCBF9;">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  
+  <!--------------------------                     ------------------------------------------>
+  <!-------------------------- Begin Modified Area ------------------------------------------>
+  <!--------------------------                     ------------------------------------------>
 
-  <!-------------------------- Modified Area ------------------------------------------>
+  <!--     Title Section    -->
+  <div>
+    <img src="img/title1.PNG" alt="Discover Morse">
+    <img src="img/title1-1.PNG" alt="Morse Code translation of 'Discover Morse'">
+    <div class="title-font1" style="padding-bottom: 25px;">
+      &nbsp;&nbsp;&nbsp;&nbsp; Learn &nbsp;&nbsp;&nbsp;&nbsp; Play &nbsp;&nbsp;&nbsp;&nbsp; Interact
+    </div>
+  </div>
   
   <!-- Tab Links -->
+  <div class="tab-casing">
   <div class="tab">
-  	<button class="tablinks" onclick="openTab(event, 'Linux')">Linux</button>
-  	<button class="tablinks" onclick="openTab(event, 'MySQL')">MySQL</button>
-  	<button class="tablinks" onclick="openTab(event, 'Apache')">Apache</button>
+      <button class="tablinks" onclick="openTab(event, 'AboutTab')">About</button>
+      <button class="tablinks" onclick="openTab(event, 'TransTab')">Translate</button>
+      <button class="tablinks" onclick="openTab(event, 'FBTab')">Feedback</button>
+  </div>
   </div>
   
   <!-- Tab Content -->
-  <div id="Linux" class="tabcontent">
-  	<h2>Linux</h2>
-  	<p>Linux is an open source operating system.</p>
+
+  <!----------------------------- About Tab ------------------------------->
+  <div id="AboutTab" class="tabcontent">
+    <h2>What is Morse Code?</h2>
+    <p>Morse Code is a language that represents words and phrases as a series of dots dashes and spaces.</p>
+    <p>Morse Code was invented in 1837, at a time where there was no possible way to instantly send written 
+       text to far off cities.
+       The code's creators were Samuel F. B. Morse, Joseph Henery, and Alfred Vail. These men took advantage 
+       of the telegraph system by creating a language made up of long and short electromagnetic signals.
+       These signals could then be sent through wires so that messages could travel quickly even via long distances.
+    </p>
+     
+    <br clear="all">
+
+    <h2>How to Read Morse Code ... </h2>
+    <p>The code consists of five different parts:</p>
+    <ul>
+      <li><b>Dots</b> (or "dits") which are <b>short signals</b></li>
+      <li><b>Dashes</b> (or "dahs") which are <b>long signals</b></li>
+      <li><b>Short Pauses</b> which go between letters</li>
+      <li><b>Meduim Pauses</b> which go between words</li>
+      <li><b>Long Pauses</b> which go between sentences</li>
+    </ul>
+
+    <h3>Here's a sample sentence with every letter in the alphabet:</h3>
+    <p><b>Pack my box with five dozen liquor jugs</b></p>
+    <p>turns into</p>
+    <p><b>
+      .--. .- -.-. -.- / 
+      -- -.-- / 
+      -... --- -..- / 
+      .-- .. - .... / 
+      ..-. .. ...- . / 
+      -.. --- --.. . -. /
+      .-.. .. --.- ..- --- .-. /
+      .--- ..- --. ...
+    </b></p>
+
+    <h3>Here's a reference table for the most used characters in morse code:</h3>
   </div>
+  <!------------------------------------ End About Tab ----------------------------------------->
   
-  <div id="MySQL" class="tabcontent">
-  	<h2>MySQL</h2>
+  <!------------------------- Interactive Translation Tab -------------------------------------->
+  <div id="TransTab" class="tabcontent">
+  	<h2>Translate</h2>
   	<p>MySQL is a popular database tool.</p>
   </div>
+  <!------------------------ End Interactive Translation Tab ----------------------------------->
   
-  <div id="Apache" class="tabcontent">
-  	<h2>Apache</h2>
-  	<p>Apache is a widely used web server.</p>
+  <!-------------------------- Feedback Tab ---------------------------------------------------->
+  <div id="FBTab" class="tabcontent">
+    <div class="centered-content" style="width: 700px;">
+        <h2>FeedBack Section</h2>
+        <p>How is your experience with this website?</p>
+        <p>Describe your experience and any changes you want below</p>
+        <br>
+        <form>
+          <label>First Name</label>
+          <input type="text" placeholder="john">
+    
+          <br clear="all" />
+    
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith">
+    
+          <br clear="all" />
+    
+          <label>email</label>
+          <input type="text" placeholder="john.smith@somwhere.com">
+    
+          <br clear="all" />
+    
+          <textarea placeholder="Your message... " style="height: 200px; width: 500px;"></textarea>
+    
+          <br clear="all" />
+    
+          <input type="submit" value="Send">
+    
+        </form>
+    </div>
   </div>
+  <!------------------------- End Feedback Tab ------------------------------------------------->
   
+  <!--------------------------                   -------------------------------------->
   <!-------------------------- End Modified Area -------------------------------------->
+  <!--------------------------                   -------------------------------------->
   
   
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
