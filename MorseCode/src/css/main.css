@@ -61,6 +61,11 @@
 	padding: 20px;
 }
 
+.centered-text{
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* styling for the bulleted list */
 ul{
 	display: table;
