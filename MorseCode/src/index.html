@@ -118,27 +118,45 @@
         <p>How is your experience with this website?</p>
         <p>Describe your experience and any changes you want below</p>
         <br>
-        <form>
+        
+        <!-- php connections have been added to this form -->
+        <form action="php/feedback.php" method="POST">
           <label>First Name</label>
-          <input type="text" placeholder="john">
+          <input type="text" name="firstname" placeholder="john">
     
           <br clear="all" />
+          <br>
     
           <label>Last Name</label>
-          <input type="text" placeholder="Smith">
+          <input type="text" name="lastname" placeholder="smith">
     
           <br clear="all" />
+          <br>
     
           <label>email</label>
-          <input type="text" placeholder="john.smith@somwhere.com">
+          <input type="text" name="emailaddr" placeholder="john.smith@somwhere.com">
+    
+          <br clear="all" />
+          <br>
+
+          <label>phone</label>
+          <input type="text" name="phonenumb" placeholder="999-999-9999">
+          
+          <br clear="all" />
+          <br>
+
+          <label>How should we get back to you?</label><br>
+          <input type="radio" name="howtocontact" value="email">By email<br>
+          <input type="radio" name="howtocontact" value="phone">By Phone<br>
+          <input type="radio" name="howtocontact" value="both">Either is fine<br>
+
+          <br clear="all" />
+    
+          <textarea placeholder="Your message... " style="height: 200px; width: 500px;" name="message"></textarea>
     
           <br clear="all" />
     
-          <textarea placeholder="Your message... " style="height: 200px; width: 500px;"></textarea>
-    
-          <br clear="all" />
-    
-          <input type="submit" value="Send">
+          <input type="submit" style="float:left;" value="Send"><input type="reset" style="float: right;" value="Clear"><br />
     
         </form>
     </div>
