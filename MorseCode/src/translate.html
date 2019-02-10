@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="background-color: #ACCBF9;">
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  
+  <!--------------------------                     ------------------------------------------>
+  <!-------------------------- Begin Modified Area ------------------------------------------>
+  <!--------------------------                     ------------------------------------------>
+
+  <!--     Title Section    -->
+  <div>
+        <img src="img/title1.PNG" alt="Discover Morse">
+        <img src="img/title1-1.PNG" alt="Morse Code translation of 'Discover Morse'">
+      </div>
+      <div class="title-font1">
+          <a style="font-style: italic;">
+            &nbsp;&nbsp;&nbsp;&nbsp; Learn
+            &nbsp;&nbsp;&nbsp;&nbsp; Play
+            &nbsp;&nbsp;&nbsp;&nbsp; Interact
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          </a>
+          <a style="font-weight: bolder; flex-grow: 1;">
+            Interactive Translation Page
+          </a>
+      </div>
+      
+      <!-- Tab Links -->
+        <div class="tab-casing">
+            <button class="to-new-page"><a href="index.html">Home</a></button>
+            <button class="to-new-page"><a href="translate.html">Translate</a></button>
+            <button class="to-new-page"><a href="feedbackForm.html">Contact</a></button>
+        </div>
+    
+      <br>
+      <br>
+      <br>
+      <br>
+       
+
+      <div class="tab-casing">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'toMorse')">Regular --> Morse</button>
+            <button class="tablinks" onclick="openTab(event, 'toRegular')">Morse --> Regular</button>
+        </div>
+      </div>
+    
+      <div id="toMorse" class="tabcontent">
+        <div class="centered-content" style="width: 1000px">
+          <h2>Translate to Morse Code</h2>
+          <textarea placeholder="Stuff to turn into morse code" style="height: 200px; width: 450px;" name="regMessage" required></textarea>
+          <textarea style="height: 200px; width: 450px; flex-grow: 1;" name="morResult" disabled></textarea>
+          <br>
+          <button class="enter-button">Translate</button>
+        </div>
+      </div>
+
+      <div id="toRegular" class="tabcontent">
+        <div class="centered-content" style="width: 1000px;">
+          <h2>Translate to English</h2>
+          <textarea placeholder="... - ..- ..-. ..-. / - --- / - ..- .-. -. / .. -. - --- / . -. --. .-.. .. ... ...." style="height: 200px; width: 450px;" name="moreMessage" required></textarea>
+          <textarea style="height: 200px; width: 450px; flex-grow: 1;" name="regResult" disabled></textarea>
+          <br>
+          <button class="enter-button">Translate</button>
+        </div>
+      </div>
+    
+  
+  <!--------------------------                   -------------------------------------->
+  <!-------------------------- End Modified Area -------------------------------------->
+  <!--------------------------                   -------------------------------------->
+  
+  
+  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/formvalidation.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
