@@ -1,20 +1,46 @@
 /* Tab Styling */
 .tab-casing{
-	border: 1px solid #050daa;
+	/*border: 1px solid #050daa;*/
 	border-bottom: none;
 	border-top: none;
+	margin: 0 auto;
+	width: 380px;
 }
 
 .tab {
 	overflow: hidden;
 	border: 1px solid #050daa;
-	border-radius: 10px 40px;
+	border-radius: 40px;
 	background-color: #b3b7f9;
 	margin: 0 auto;
-	width: 250px;
+	width: 280px;
 }
 
 /* Style buttons that open the tab content */
+.to-new-page{
+	background-color: inherit;
+	float: left;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	border: 1px solid #050daa;
+	font-size: 25px;
+}
+
+.enter-button{
+	background-color: #626af7;
+	float: center;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #050daa;
+	border-radius: 5px;
+}
+
+.to-new-page:hover{
+	background-color: #8f94f7;
+}
+
 .tab button {
 	background-color: inherit;
 	float: left;
@@ -49,13 +75,14 @@
 .title-font1{
 	font-size: 30px;
 	font-family: verdana;
-	font-style: italic;
-	color: #0615a0; 
+	color: #0615a0;
+	padding-bottom: 25px;
 }
 
 /* boiler plate for any centered element */
 .centered-content{
 	margin: 0 auto;
+	background-color: #63a2ff;
 	border: 1px solid #050daa;
 	border-radius: 15px 50px;
 	padding: 20px;
