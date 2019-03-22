@@ -4,20 +4,35 @@ function openTab(evt, tabName){
 	var tabContent;
 	var tabLinks;
 	
-	//Get all elements with class tabcontent and hide them
+	//Get all elements with class tabcontent and hide them --------------------------------------
 	tabContent = document.getElementsByClassName("tabcontent");
 	for(i=0; i < tabContent.length; i++){
 		tabContent[i].style.display = "none";
 	}
+	// -----------------------------------------------------------------------------------------
 	
-	//Get all elements with the class tablinks and "deactivate" them
+	//Get all elements with the class tablinks and "deactivate" them --------------------------
 	tabLinks = document.getElementsByClassName("tablinks");
 	for(i=0; i < tabLinks.length; i++){
 		tabLinks[i].className = tabLinks[i].className.replace(" active", "");
 	}
+	// ---------------------------------------------------------------------------------------
 	
-	//Show the current tab ans "activate" the button that opened the tab
+	//Show the current tab ans "activate" the button that opened the tab ---------------------
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.className += " active";
+	//-----------------------------------------------------------------------------------------
 }
 
+function showData(evt, dataSection){
+	var i;
+	var allDataSections;
+
+	allDataSections = document.getElementsByClassName("viewdata");
+	for(i=0; i < allDataSections.length; i++){
+		allDataSections[i].style.display = "none";
+	}
+
+	document.getElementById(dataSection).style.display = "block";
+
+}
