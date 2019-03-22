@@ -42,12 +42,6 @@ if($message_success == 0){
 }
 
 if($successflag){
-    $full_message = "$raw_message \n\n$first_name $last_name\nphone: $phone_num";
-    $recipient    = "waynewdata@outlook.com";
-    $subject      = "Feedback";
-    $mailheader   = "From: $email_addr \r\n";
-
-    @mail($recipient, $subject, $full_message, $mailheader) or die("Error");
     echo "None!<br>";
     echo "Thanks for filling out the form, we will get back to you soon";
 }else{
